@@ -14,3 +14,5 @@ test('-d', './out/docs') && rm('-rf', './out/docs');
 
 exec('jsdoc -c .jsdoc-config.json -u lib/*;');
 echo(' - documentation can be found at ./out/docs');
+
+echo(' - end of file ');
