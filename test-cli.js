@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 require('shelljs/global');
 require('colors');
+require('http');
 
 var Mocha = require('mocha'),
     recursive = require('recursive-readdir'),
@@ -8,7 +9,7 @@ var Mocha = require('mocha'),
     execOptions = { silent: true },
 
     /**
-     * The directory containing CLI test specs.
+     * The directory containing CLI test specification.
      *
      * @type {String}
      */
